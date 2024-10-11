@@ -1,0 +1,61 @@
+
+@keyframes dropIn {
+    0% {
+        transform: translateY(-100vh); /* Start off-screen from the top */
+        opacity: 0; /* Start with invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at the normal position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #cc2b5e, #753a88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff91;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.2);
+    animation: dropIn 1s ease-out; /* Runs for 1 second with easing effect */
+
+}
+
+h1 {
+    color: #2c2828;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+    border: 1px dashed purple;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(102, 2, 102);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  hsla(300, 91%, 13%, 0.699)
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
